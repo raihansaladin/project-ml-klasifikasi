@@ -157,4 +157,4 @@ if st.button("🚀 Jalankan Prediksi Klasifikasi", use_container_width=True):
         st.exception(e)
 
 st.markdown("---")
-st.caption("Developed for University Project – Information Technology | Machine Learning Class C")
+st.caption("Developed for University Project – Informatics Engineering | Machine Learning Class C")
