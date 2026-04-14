@@ -105,7 +105,7 @@ if st.button("🚀 Jalankan Prediksi Klasifikasi", use_container_width=True):
         emoji_map = {'Sunny':'☀️','Rainy':'🌧️','Cloudy':'☁️','Snowy':'❄️'}
         st.balloons()
         st.markdown(f"""
-            <div style="background-color:#f0f2f6; padding:20px; border-radius:10px; text-align:center;">
+            <div style="background-color:#2F7D9F; padding:20px; border-radius:10px; text-align:center;">
                 <h1 style="margin:0;">{emoji_map.get(result_text, '🌤️')} {result_text}</h1>
                 <p>Cluster: {cluster_label[0]}</p>
             </div>
