@@ -74,7 +74,7 @@ with col_info:
         overflow-y: auto;
         padding: 10px;
         border-radius: 10px;
-        background-color: #f5f5f5;
+        background-color: #2F7D9F;
     ">
     
     <b>Berikut penjelasan setiap parameter input:</b><br><br>
