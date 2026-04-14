@@ -69,46 +69,55 @@ with col_info:
     st.subheader("📊 Informasi Fitur")
 
     st.markdown("""
-    Berikut penjelasan setiap parameter input:
+    <div style="
+        height: 400px;
+        overflow-y: auto;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+    ">
+    
+    <b>Berikut penjelasan setiap parameter input:</b><br><br>
 
-    * 🌡️ **Temperature (°C)**  
-      Menunjukkan suhu udara.  
-      Nilai tinggi → cuaca panas (cenderung cerah).
+    🌡️ <b>Temperature (°C)</b><br>
+    Menunjukkan suhu udara.<br>
+    Nilai tinggi → cuaca panas (cenderung cerah).<br><br>
 
-    * 💧 **Humidity (%)**  
-      Tingkat kelembapan udara.  
-      Semakin tinggi → udara lebih lembap, potensi hujan meningkat.
+    💧 <b>Humidity (%)</b><br>
+    Tingkat kelembapan udara.<br>
+    Semakin tinggi → udara lebih lembap, potensi hujan meningkat.<br><br>
 
-    * 🌬️ **Wind Speed (km/h)**  
-      Kecepatan angin.  
-      Angin kencang sering berkaitan dengan badai atau perubahan cuaca.
+    🌬️ <b>Wind Speed (km/h)</b><br>
+    Kecepatan angin.<br>
+    Angin kencang sering berkaitan dengan badai.<br><br>
 
-    * 🌧️ **Precipitation (%)**  
-      Persentase kemungkinan hujan.  
-      Nilai besar → peluang hujan tinggi.
+    🌧️ <b>Precipitation (%)</b><br>
+    Persentase kemungkinan hujan.<br>
+    Nilai besar → peluang hujan tinggi.<br><br>
 
-    * ☁️ **Cloud Cover (0–4)**  
-      Tingkat tutupan awan:  
-      0 = Cerah, 4 = Mendung tebal.
+    ☁️ <b>Cloud Cover (0–4)</b><br>
+    0 = Cerah, 4 = Mendung tebal.<br><br>
 
-    * 🌡️ **Atmospheric Pressure (hPa)**  
-      Tekanan udara.  
-      Tekanan rendah sering menandakan cuaca buruk.
+    🌡️ <b>Atmospheric Pressure (hPa)</b><br>
+    Tekanan udara.<br>
+    Tekanan rendah → cuaca buruk.<br><br>
 
-    * ☀️ **UV Index**  
-      Intensitas radiasi matahari.  
-      Nilai tinggi → cuaca cerah dan panas.
+    ☀️ <b>UV Index</b><br>
+    Intensitas radiasi matahari.<br>
+    Nilai tinggi → cuaca cerah.<br><br>
 
-    * 👁️ **Visibility (km)**  
-      Jarak pandang.  
-      Rendah → kabut, hujan, atau polusi.
+    👁️ <b>Visibility (km)</b><br>
+    Jarak pandang.<br>
+    Rendah → kabut / hujan.<br><br>
 
-    * 🍂 **Season**  
-      Musim dalam setahun.
+    🍂 <b>Season</b><br>
+    Musim dalam setahun.<br><br>
 
-    * 📍 **Location Type**  
-      Jenis wilayah: daratan, pegunungan, atau pesisir.
-    """)
+    📍 <b>Location Type</b><br>
+    Inland / Mountain / Coastal.
+    
+    </div>
+    """, unsafe_allow_html=True)
 
 # 5. Logika Prediksi
 st.markdown("---")
