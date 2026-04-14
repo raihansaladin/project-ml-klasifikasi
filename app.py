@@ -66,14 +66,48 @@ with col_input:
                               format_func=lambda x: ["Inland","Mountain","Coastal"][x])
 
 with col_info:
-    st.subheader("🎯 Prediksi Target")
+    st.subheader("📊 Informasi Fitur")
+
     st.markdown("""
-    Agar model dapat memprediksi masing-masing kelas, coba gunakan kombinasi parameter berikut:
-    
-    * **Sunny**: Temp > 25°C, Hum < 40%, Prec 0%, Cloud 0.
-    * **Rainy**: Hum > 80%, Prec > 70%, Cloud 3-4.
-    * **Cloudy**: Hum 50-70%, Prec < 20%, Cloud 2-3.
-    * **Snowy**: Temp < 0°C, Prec > 50%, Hum > 70%.
+    Berikut penjelasan setiap parameter input:
+
+    * 🌡️ **Temperature (°C)**  
+      Menunjukkan suhu udara.  
+      Nilai tinggi → cuaca panas (cenderung cerah).
+
+    * 💧 **Humidity (%)**  
+      Tingkat kelembapan udara.  
+      Semakin tinggi → udara lebih lembap, potensi hujan meningkat.
+
+    * 🌬️ **Wind Speed (km/h)**  
+      Kecepatan angin.  
+      Angin kencang sering berkaitan dengan badai atau perubahan cuaca.
+
+    * 🌧️ **Precipitation (%)**  
+      Persentase kemungkinan hujan.  
+      Nilai besar → peluang hujan tinggi.
+
+    * ☁️ **Cloud Cover (0–4)**  
+      Tingkat tutupan awan:  
+      0 = Cerah, 4 = Mendung tebal.
+
+    * 🌡️ **Atmospheric Pressure (hPa)**  
+      Tekanan udara.  
+      Tekanan rendah sering menandakan cuaca buruk.
+
+    * ☀️ **UV Index**  
+      Intensitas radiasi matahari.  
+      Nilai tinggi → cuaca cerah dan panas.
+
+    * 👁️ **Visibility (km)**  
+      Jarak pandang.  
+      Rendah → kabut, hujan, atau polusi.
+
+    * 🍂 **Season**  
+      Musim dalam setahun.
+
+    * 📍 **Location Type**  
+      Jenis wilayah: daratan, pegunungan, atau pesisir.
     """)
 
 # 5. Logika Prediksi
